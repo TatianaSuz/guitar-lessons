@@ -1,0 +1,426 @@
+/* line 1, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../../../Desktop/guitar-lessons/src/sass/resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 17, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* line 21, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+h1, li, p, h2 {
+  font-family: "Roboto Light", sans-serif;
+}
+
+/* line 24, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+p {
+  letter-spacing: 2px;
+}
+
+/* line 27, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+h1, h2 {
+  letter-spacing: 10px;
+  font-size: 400px;
+}
+
+/* line 31, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+hr {
+  border: 1px solid black;
+  width: 400px;
+}
+
+/* line 35, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.main-section {
+  min-height: 820px;
+  background: #C7C7D4;
+  padding-top: 18px;
+  margin-bottom: 30px;
+}
+
+/* line 40, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.main-section__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 89px;
+  align-items: center;
+}
+
+/* line 46, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.main-section__content-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 50, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.main-section__first-ellipse {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+
+/* line 55, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 60, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 63, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 98px;
+  font-size: 20px;
+}
+
+/* line 66, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 69, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.left-wrapper {
+  position: relative;
+}
+
+/* line 71, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.left-wrapper__img {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 74, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.left-wrapper__rectangle_violet {
+  position: absolute;
+  width: 590px;
+  height: 212px;
+  border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: 140px;
+  left: -100px;
+  transform: rotate(-60deg);
+  background-color: rgba(89, 7, 139, 0.9);
+}
+
+/* line 80, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.left-wrapper__rectangle_yellow {
+  position: absolute;
+  width: 590px;
+  height: 212px;
+  border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: 212px;
+  left: -34px;
+  transform: rotate(-30deg);
+  background-color: rgba(194, 164, 6, 0.9);
+}
+
+/* line 86, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.left-wrapper__rectangle_pink {
+  position: absolute;
+  width: 590px;
+  height: 212px;
+  border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  top: 173px;
+  left: -65px;
+  transform: rotate(-45deg);
+  background-color: rgba(186, 10, 115, 0.9);
+}
+
+/* line 94, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.right-wrapper {
+  width: 385px;
+  position: absolute;
+  top: 36px;
+  right: 80px;
+  display: flex;
+  z-index: 3;
+  flex-direction: column;
+}
+
+/* line 102, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.right-wrapper__icons-box {
+  margin-bottom: 2px;
+}
+
+/* line 104, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+
+/* line 106, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.right-wrapper__text {
+  font-size: 16px;
+  margin-bottom: 64px;
+}
+
+/* line 110, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons {
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+/* line 113, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #C7C7D4;
+  border-radius: 100px;
+  margin-right: 28px;
+}
+
+/* line 123, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons__item i {
+  font-size: 44px;
+}
+
+/* line 126, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.title {
+  font-size: 72px;
+}
+
+/* line 128, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.title__block {
+  width: 346px;
+  margin-bottom: 60px;
+}
+
+/* line 132, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.buttons {
+  display: inline-flex;
+}
+
+/* line 134, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.buttons__main-btn {
+  width: 200px;
+  height: 60px;
+  margin-right: 28px;
+  background-color: #9B009E;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-family: "Roboto Thin", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+/* line 145, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.buttons__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 148, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.buttons img {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 152, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.buttons__text {
+  font-size: 16px;
+}
+
+/* line 155, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.ellipse {
+  width: 268px;
+  height: 268px;
+  background: linear-gradient(270deg, rgba(57, 0, 130, 0.8), rgba(14, 56, 163, 0.8), rgba(255, 0, 153, 0.8), rgba(204, 255, 0, 0.8));
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 163, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.ellipse__subtract {
+  width: 194px;
+  height: 194px;
+  border-radius: 300px;
+  background-color: #C7C7D4;
+}
+
+/* line 169, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section {
+  min-height: 700px;
+}
+
+/* line 171, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section__container {
+  padding-top: 32px;
+  position: relative;
+}
+
+/* line 174, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section hr {
+  margin-bottom: 40px;
+}
+
+/* line 176, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section__card-box {
+  display: inline-flex;
+}
+
+/* line 178, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section__icons-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 181, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section__first-ellipse {
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  z-index: -1;
+}
+
+/* line 186, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.second-section__second-ellipse {
+  position: absolute;
+  top: 364px;
+  left: -60px;
+  z-index: -1;
+}
+
+/* line 192, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item {
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: rgba(186, 10, 115, 0.9);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+/* line 200, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item:first-child {
+  background-color: rgba(194, 164, 6, 0.9);
+  margin-right: 30px;
+}
+
+/* line 203, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item:nth-child(2) {
+  padding-left: 70px;
+  margin-right: 30px;
+}
+
+/* line 206, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item:last-child {
+  background-color: rgba(89, 7, 139, 0.9);
+}
+
+/* line 208, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item__img {
+  height: 335px;
+}
+
+/* line 210, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.cards-item__text {
+  width: 236px;
+  font-size: 36px;
+  text-align: center;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 144px;
+  right: -34px;
+}
+
+/* line 219, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 222, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons-item:last-child {
+  margin-right: 0;
+}
+
+/* line 224, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons-item__img {
+  margin-right: 20px;
+}
+
+/* line 226, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons-item__text {
+  font-size: 18px;
+}
+
+/* line 228, ../../../Desktop/guitar-lessons/src/sass/style.sass */
+.icons-item__text span {
+  font-size: 36px;
+}
+
+/*# sourceMappingURL=style.css.map */
