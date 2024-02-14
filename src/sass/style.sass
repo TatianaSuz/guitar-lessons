@@ -6,6 +6,17 @@ $main-color-violet: #9B009E
 $main-color-dark-violet: rgba(89, 7, 139, 0.9)
 $main-color-yellow: rgba(194, 164, 6, 0.9)
 
+@font-face
+  font-family: "MontserratT"
+  src: url('../fonts/Montserrat-Regular.ttf')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "MontserratT"
+  src: url('../fonts/Montserrat-SemiBold.ttf')
+  font-weight: bold
+  font-style: normal
 
 @mixin rectangles
   position: absolute
@@ -14,19 +25,28 @@ $main-color-yellow: rgba(194, 164, 6, 0.9)
   border-radius: 100px
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 
+@mixin ellipse-base
+  width: 268px
+  height: 268px
+  background: linear-gradient(270deg, rgba(57, 0, 130, 0.8), rgba(14, 56, 163, 0.8), rgba(255, 0, 153, 0.8), rgba(204, 255, 0, 0.8))
+  border-radius: 300px
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin ellipse-subtract
+  width: 194px
+  height: 194px
+  border-radius: 300px
+
+html
+  font-family: "MontserratT", sans-serif
+  font-weight: normal
+
 *
   box-sizing: border-box
   font-family: sans-serif
 
-h1, li, p, h2, h3, h4, h5
-  font-family: "Roboto Light", sans-serif
-
-p
-  letter-spacing: 2px
-
-h1, h2, h3, h4, h5
-  letter-spacing: 10px
-  font-size: 400px
 
 hr
   border: 1px solid black
@@ -44,6 +64,7 @@ hr
     justify-content: space-between
     height: 89px
     align-items: center
+    font-weight: bold
   &__content-container
     position: relative
     display: flex
@@ -125,12 +146,14 @@ hr
 
 .title
   font-size: 72px
+  font-weight: bold
   &__block
     width: 346px
     margin-bottom: 60px
 
 .buttons
   display: inline-flex
+  font-weight: bold
   &__main-btn
     width: 200px
     height: 60px
@@ -153,18 +176,16 @@ hr
     font-size: 16px
 
 .ellipse
-  width: 268px
-  height: 268px
-  background: linear-gradient(270deg, rgba(57, 0, 130, 0.8), rgba(14, 56, 163, 0.8), rgba(255, 0, 153, 0.8), rgba(204, 255, 0, 0.8))
-  border-radius: 300px
-  display: flex
-  justify-content: center
-  align-items: center
+  @include ellipse-base
   &__subtract
-    width: 194px
-    height: 194px
-    border-radius: 300px
+    @include ellipse-subtract
     background-color: $background-color
+
+.ellipse-white
+  @include ellipse-base
+  &__subtract
+    @include ellipse-subtract
+    background-color: white
 
 .second-section
   min-height: 700px
@@ -185,9 +206,10 @@ hr
     z-index: -1
   &__second-ellipse
     position: absolute
-    top: 364px
-    left: -60px
+    top: 336px
+    left: -100px
     z-index: -1
+
 
 .cards-item
   width: 360px
@@ -215,6 +237,7 @@ hr
     position: absolute
     top: 144px
     right: -34px
+    font-weight: bold
 
 .icons-item
   display: inline-flex
@@ -227,6 +250,7 @@ hr
     font-size: 18px
     span
       font-size: 36px
+      font-weight: bold
 
 .third-section
   position: relative
